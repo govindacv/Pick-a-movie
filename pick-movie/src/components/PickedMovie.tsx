@@ -1,10 +1,10 @@
  
 import { useSelector } from 'react-redux'
-import { getSelectedMovieOfActor } from '../dux/ActorSlice'
 import Header from './Header';
+import { getChoosenMovie } from '../dux/QuestionSlice';
 
 export const PickedMovie = () => {
-    const movie = useSelector(getSelectedMovieOfActor);
+    const movie = useSelector(getChoosenMovie);
     console.log(movie);
 
     return (

@@ -7,6 +7,7 @@ import '../styles/question.css'
 import Header from './Header';
 import { Footer } from './Footer';
 import { Description } from './Description';
+import { addToChoosenMovie } from '../dux/QuestionSlice';
 
 
 export const Question = () => {
@@ -40,8 +41,9 @@ export const Question = () => {
 
         if (singleMovie != undefined) {
 
-            dispatch(addToSelectedMovieOfActor(singleMovie))
+            dispatch(addToChoosenMovie(singleMovie))
             navigate('/pickedMovie')
+
         }
     }
 
