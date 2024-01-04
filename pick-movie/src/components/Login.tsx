@@ -52,10 +52,10 @@ const Login = () => {
         <div className="mainLogin">
             <div className="login">
                 <div className="email">
-                    <input ref={emailInput} type="email" onChange={handleOnChangeEmail} />
+                    <input ref={emailInput} type="email" onChange={handleOnChangeEmail}  placeholder='Email'/>
                 </div>
                 <div className="password">
-                    <input type="password" ref={passwordInput} onChange={handleOnchangePassword} />
+                    <input type="password" ref={passwordInput} onChange={handleOnchangePassword} placeholder='password' />
                 </div>
                 <div className="submit" >
                     <button onClick={handleOnClickLogin}> Login</button>
