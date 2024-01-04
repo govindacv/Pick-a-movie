@@ -1,11 +1,10 @@
-*
-{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-body
-{
-  background: url('joker.jpg') no-repeat center fixed;
+
+body {
+  background: url('https://c4.wallpaperflare.com/wallpaper/1000/490/543/heath-ledger-joker-monochrome-batman-wallpaper-preview.jpg') no-repeat center fixed;
   background-size: cover;
 }
