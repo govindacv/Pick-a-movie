@@ -18,7 +18,7 @@ export const Question = () => {
 
     useEffect(() => {
         if (option !== '') {
-            axios.get(`http://www.omdbapi.com/?i=tt3896198&apikey=ac4ecdb3&s=${option}`).then((response: any) => {
+            axios.get(`https://www.omdbapi.com/?i=tt3896198&apikey=ac4ecdb3&s=${option}`).then((response: any) => {
                 setMovies(response.data.Search)
                 console.log(random);
 
