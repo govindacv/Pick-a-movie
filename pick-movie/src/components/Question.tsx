@@ -26,7 +26,7 @@ export const Question = () => {
             })
         }
     }, [option])
-    const handleoption = (e) => {
+    const handleoption = (e:any) => {
         console.log(e.target.value);
         setOption(e.target.value);
 

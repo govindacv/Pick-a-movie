@@ -26,11 +26,25 @@ const Login = () => {
     const emailInput = useRef<HTMLInputElement | null>(null)
     const passwordInput = useRef<HTMLInputElement | null>(null)
     const handleOnChangeEmail = () => {
-        setEmail(emailInput.current?.value)
-    }
+
+        const newEmail = emailInput.current?.value;
+
+
+        if (newEmail !== undefined) {
+            setEmail(newEmail);
+        }
+    };
+
     const handleOnchangePassword = () => {
-        setpassword(passwordInput.current?.value)
-    }
+
+        const newPassword = passwordInput.current?.value;
+
+
+        if (newPassword !== undefined) {
+            setpassword(newPassword);
+        }
+    };
+
     return (
 
 

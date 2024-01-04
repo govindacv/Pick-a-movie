@@ -1,9 +1,8 @@
-import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import Header, { sm } from './Header';
 import { addToSelectedFromSearch, getResponse, getSearchedMovies } from '../dux/SearchSlice';
 import '../styles/SearchResult.css';
-import { Link, useLocation } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 const SearchResult = () => {
     const response = useSelector(getResponse);

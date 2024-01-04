@@ -1,4 +1,4 @@
-import React from 'react'
+ 
 import { useSelector } from 'react-redux'
 import { getSelectedMovieOfActor } from '../dux/ActorSlice'
 import Header from './Header';

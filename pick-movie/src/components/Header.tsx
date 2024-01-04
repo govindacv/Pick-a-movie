@@ -5,7 +5,6 @@ import { useEffect, useRef, useState } from "react";
 import axios from "axios";
 import { useDispatch } from "react-redux";
 import { addToSearchedMovies } from "../dux/SearchSlice";
-import { addToSearchedGener } from "../dux/GenerSlice";
 import { DropdownMenuTopGener } from "./DropdownMenuTopGener";
 import { DropDownMenuTopActor } from "./DropDownMenuTopActor";
 
@@ -26,7 +25,7 @@ const Header = () => {
 
 
     useEffect(() => {
-        // Check if searchState is true, then focus on the input field
+       
         if (searchRef.current) {
             searchRef.current.focus();
         }
@@ -53,16 +52,19 @@ const Header = () => {
         setSearchState(false);
     };
 
-    const handeKeyDown = (e: { key: string; }) => {
-        if (e.key == 'Enter') {
-
-            setSearchedMovie(searchRef.current?.value)
-            setSearchState(false)
-
+    const handeKeyDown = (e: { key: string }) => {
+        if (e.key === 'Enter') {
+           
+          const inputValue = searchRef.current?.value;
+      
+           
+          if (inputValue !== undefined) {
+            setSearchedMovie(inputValue);
+            setSearchState(false);
+          }
         }
-
-    }
-
+      };
+      
 
     let timeoutId: number;
 

@@ -1,14 +1,14 @@
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import '../styles/Dropdown.css'
 import axios from 'axios'
 import { addToSearchedGener } from '../dux/GenerSlice'
 import { useDispatch } from 'react-redux'
 import { useNavigate } from 'react-router-dom'
-export let sg=''
+export let sg = ''
 export const DropdownMenuTopGener = () => {
     const [searchedGener, setSearchGener] = useState('')
     const dispatch = useDispatch()
-    const navigate=useNavigate()
+    const navigate = useNavigate()
     useEffect(() => {
 
         if (searchedGener !== '') {
@@ -17,7 +17,7 @@ export const DropdownMenuTopGener = () => {
             axios.get(`https://api.sampleapis.com/movies/${searchedGener}`).then((response) => {
                 console.log(response.data);
                 dispatch(addToSearchedGener(response.data))
-                sg=searchedGener
+                sg = searchedGener
                 navigate(`/${searchedGener}`)
             }).catch((error) => {
                 console.log(error);
@@ -29,7 +29,7 @@ export const DropdownMenuTopGener = () => {
     const handleOnclick = (val: string) => {
 
         setSearchGener(val)
-        
+
     }
     return (
         <div className='dropdownMenuTopGener'>
