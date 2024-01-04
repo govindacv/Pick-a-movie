@@ -1,6 +1,6 @@
 import '../styles/Description.css'
 
-import React from 'react'
+ 
 
 export const Description = () => {
     return (
