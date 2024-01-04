@@ -1,7 +1,6 @@
 import axios from 'axios'
 import { useState, useEffect } from 'react';
 import { useDispatch } from 'react-redux';
-import { addToSelectedMovieOfActor } from '../dux/ActorSlice';
 import { useNavigate } from 'react-router-dom';
 import '../styles/question.css'
 import Header from './Header';
