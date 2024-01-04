@@ -1,0 +1,36 @@
+.mainhome{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    padding: 60px 10px;
+     
+    row-gap: 30px;
+}
+.main--heading{
+    font-size: 25px;
+    text-shadow: 1px 1px 10px white;
+}
+.main--description{
+    font-size: 25px;
+    width: 60%;
+    color: white;
+    text-align: center;
+
+}
+.start-button  button{
+    padding: 10px 30px;
+    background-color: rgba(231,76,60,1);
+    font-size: 20px;
+    border: 2px solid white;
+    cursor: pointer;
+    border: none;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+}
+.start-button  button:hover
+{
+    background-color: white;
+    color: rgba(231,76,60,1);
+}
+ 

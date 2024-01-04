@@ -1,0 +1,24 @@
+.question
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    top: 100px;
+    gap: 20px;
+}
+.genre-list li
+{
+    list-style-type: none;
+    color: white;
+    margin-top: 5px;
+
+
+}
+.question button
+{
+    padding: 5px 20px;
+    
+}
+ 
