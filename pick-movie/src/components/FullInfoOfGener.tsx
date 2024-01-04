@@ -2,7 +2,7 @@ import Header from './Header'
 import { useSelector } from 'react-redux'
 import { getSelectedMovie } from '../dux/GenerSlice'
 import '../styles/FullInfoGener.css'
-import { Footer } from './Footer'
+ 
 
 export const FullInfoOfGener = () => {
   const movie = useSelector(getSelectedMovie)
