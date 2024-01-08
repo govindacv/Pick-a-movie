@@ -1,152 +1,141 @@
 .header {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    padding: 5px 20px;
-    border-bottom: 1px solid white;
-    box-shadow: 1px 1px 5px white;
-    background-color: #4a4a4a79;
-
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 5px 20px;
+  border-bottom: 1px solid white;
+  box-shadow: 1px 1px 5px white;
+  background-color: #4a4a4a79;
 }
 
 .pickAMovie--logo img {
-    height: 60px;
+  height: 60px;
 }
 
 .pickAMovie--logo img:hover {
-    opacity: 0.5;
-
+  opacity: 0.5;
 }
 
 .pickAMovie--contents {
-    width: 45%;
-    display: flex;
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    justify-content: space-around;
+  width: 45%;
+  display: flex;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  justify-content: space-around;
 }
 
 .pickAMovie--contents h6 {
-    display: inline;
-    color: white;
+  display: inline;
+  color: white;
 }
 
 .pickAMovie--contents h6:hover {
-    text-decoration: underline;
-    text-decoration-color: orangered;
-    text-decoration-thickness: 2px;
+  text-decoration: underline;
+  text-decoration-color: orangered;
+  text-decoration-thickness: 2px;
 }
 
 .verticleArrow {
-    display: inline;
-    position: relative;
-    left: 10px;
-    font-weight: bolder;
-    font-size: 0.8rem;
+  display: inline;
+  position: relative;
+  left: 10px;
+  font-weight: bolder;
+  font-size: 0.8rem;
 }
 
 .fa-chevron-down {
-    font-size: 0.6rem;
-    position: relative;
-    left: 2px;
+  font-size: 0.6rem;
+  position: relative;
+  left: 2px;
 }
 
 .fa-magnifying-glass,
 .fa-facebook,
 .fa-instagram,
 .fa-youtube {
-    font-size: 0.8rem;
+  font-size: 0.8rem;
 }
 
 .fa-facebook:hover {
-    color: #316FF6;
-
+  color: #316ff6;
 }
 
 .fa-instagram:hover {
-    color: #E4405F;
-
+  color: #e4405f;
 }
 
 .fa-youtube:hover {
-    color: #CD201F;
+  color: #cd201f;
 }
 
 .pickAMovie--contents a {
-    color: white;
+  color: white;
 }
 
 .searchBar {
-    position: absolute;
-    top: 80px;
-
+  position: absolute;
+  top: 80px;
 }
 
 .searchBar input {
-    background-color: #4a4a4a79;
-    padding: 20px;
-    width: 150%;
-    border: none;
-    border: 1px solid white;
-
+  background-color: #4a4a4a79;
+  padding: 20px;
+  width: 150%;
+  border: none;
+  border: 1px solid white;
 }
 
 .p {
-    position: absolute;
-    bottom: 50%;
+  position: absolute;
+  bottom: 50%;
 }
 
 .geners {
-    position: absolute;
-    border: 1px solid white;
-    top: 80px;
+  position: absolute;
+  border: 1px solid white;
+  top: 80px;
 }
 
 #dropdown-products {
-
-    display: none;
-
-
+  display: none;
 }
 
 .pickAMovie--topgeners:hover #dropdown-products {
-    position: absolute;
+  position: absolute;
 
-    color: rebeccapurple;
-    display: block;
-    background-color: #316FF6;
-    top: 50px;
-    width: 50%;
+  color: rebeccapurple;
+  display: block;
+  background-color: #316ff6;
+  top: 50px;
+  width: 50%;
 }
 
 .pickAMovie--blog :hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .pickAMovie--logout {
-    cursor: pointer;
-    border: 1px solid black;
-    height: 30px;
-    width: 80px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    right: 30px;
-    top: 25px;
+  cursor: pointer;
+  border: 1px solid black;
+  height: 30px;
+  width: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: 30px;
+  top: 25px;
 
-    background-color: white;
+  background-color: white;
+}
+.pickAMovie--logout h6 {
+  color: rgba(231, 76, 60, 1);
+}
 
-}
-.pickAMovie--logout h6
-{
-    color: rgba(231, 76, 60, 1);
-}
- 
 .pickAMovie--moviePicker a {
-    text-decoration: none;
+  text-decoration: none;
 }
-.pickAMovie--moviePicker h5:hover{
-    text-decoration: none;
+.pickAMovie--moviePicker h5:hover {
+  text-decoration: none;
 }

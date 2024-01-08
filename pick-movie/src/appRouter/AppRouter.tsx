@@ -12,67 +12,57 @@ import Login from "../components/Login";
 import { PickedMovie } from "../components/PickedMovie";
 import { Question } from "../components/Question";
 
+const AppRouter = createBrowserRouter([
+  {
+    path: "/",
+    element: <App />,
+    children: [
+      {
+        index: true,
+        element: <PickAMovieForMe />,
+      },
+      {
+        path: "/login",
+        element: <Login />,
+      },
+      {
+        path: "/searchedMovie",
+        element: <SearchResult />,
+      },
+      {
+        path: "/:searchedGener",
+        element: <SearchedGener />,
+      },
+      {
+        path: "/gener/:gener/:item",
+        element: <FullInfoOfGener />,
+      },
+      {
+        path: "searchedmovie/fullInFoOfSelectedFromSearch",
+        element: <FullInFoOfSeledtedFromSearch />,
+      },
+      {
+        path: "/actor",
+        element: <SearchedActor />,
+      },
+      {
+        path: `actors/selectedMovie`,
+        element: <FullInfoOfSelectedFromActors />,
+      },
+      {
+        path: "/blog",
+        element: <BlogInfo />,
+      },
+      {
+        path: "/pickedMovie",
+        element: <PickedMovie />,
+      },
+      {
+        path: "/q",
+        element: <Question />,
+      },
+    ],
+  },
+]);
 
-const AppRouter = createBrowserRouter([{
-        path: '/',
-        element: <App />,
-        children: [
-                {
-                        index: true,
-                        element: <PickAMovieForMe />
-                }
-                ,
-                {
-                        path:'/login',
-                        element:<Login/>
-                },
-                {
-
-                        path: '/searchedMovie',
-                        element: <SearchResult />
-                }
-                , 
-                {
-                        path:'/:searchedGener',
-                        element:<SearchedGener/>
-
-                }
-                ,
-                {
-                        path:'/gener/:gener/:item',
-                        element:<FullInfoOfGener/>
-                }
-                ,
-                {
-
-                        path: 'searchedmovie/fullInFoOfSelectedFromSearch',
-                        element: <FullInFoOfSeledtedFromSearch/>
-                }
-                ,
-                {
-                        path:'/actor',
-                        element: <SearchedActor/>
-                },
-                {
-                        path:`actors/selectedMovie`,
-                        element: <FullInfoOfSelectedFromActors/>
-                }
-                ,
-                {
-                        path:'/blog',
-                        element: <BlogInfo/>
-                }
-                ,
-                {
-                        path:'/pickedMovie',
-                        element:<PickedMovie/>
-                }
-                ,
-                {
-                        path:'/q',
-                        element:<Question/>
-                }
-        ]
-}])
-
-export default AppRouter
+export default AppRouter;

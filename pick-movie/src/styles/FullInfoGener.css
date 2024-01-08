@@ -1,45 +1,41 @@
 .fullInfoOfGener {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    padding: 50px;
-    gap: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 50px;
+  gap: 30px;
 }
 
 .fullInfoOfGener h1 {
-    color: white;
+  color: white;
 }
-.moviePoster img
-{
-    box-shadow: 1px 1px 10px white;
+.moviePoster img {
+  box-shadow: 1px 1px 10px white;
 }
-.watchbutton{
-    display: flex;
-    justify-content: center;
-    gap: 40px 20px;
-   
-   
+.watchbutton {
+  display: flex;
+  justify-content: center;
+  gap: 40px 20px;
 }
-.watchbutton button{
-    color: white;
-    font-size: 20px;
-    border: 2px solid white;
-    cursor: pointer;
-    background-color: #e74c3c;
-    border: none;
+.watchbutton button {
+  color: white;
+  font-size: 20px;
+  border: 2px solid white;
+  cursor: pointer;
+  background-color: #e74c3c;
+  border: none;
 }
-.watchbutton button:hover{
-    background-color: black;
-    border: 1px solid #e74c3c;
+.watchbutton button:hover {
+  background-color: black;
+  border: 1px solid #e74c3c;
 }
-.trailer{
-    padding: 10px 40px;
+.trailer {
+  padding: 10px 40px;
 }
-.amazon{
-    padding: 10px 200px;
+.amazon {
+  padding: 10px 200px;
 }
-.fa-circle-play
-{
-    margin-right: 10px;
+.fa-circle-play {
+  margin-right: 10px;
 }

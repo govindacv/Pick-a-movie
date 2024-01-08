@@ -1,44 +1,38 @@
-.description{
-    padding: 30px;
-    border-top: 1px solid white;
-    box-shadow: 1px 1px 10px white;
-    font-family:'Times New Roman', Times, serif ;
-    position: absolute;
-    top: 100%;
-   background-color: #4a4a4a79;
-   
+.description {
+  padding: 30px;
+  border-top: 1px solid white;
+  box-shadow: 1px 1px 10px white;
+  font-family: "Times New Roman", Times, serif;
+  position: absolute;
+  top: 100%;
+  background-color: #4a4a4a79;
 }
-.descriptionMain{
-    display: flex;
-    justify-content: space-around;
-    text-align: center;
-    color: white;
-    padding-bottom: 30px;
-   
-   
+.descriptionMain {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  color: white;
+  padding-bottom: 30px;
 }
-.descriptionMain div h1{
-    font-size: 50px;
-    color: crimson;
+.descriptionMain div h1 {
+  font-size: 50px;
+  color: crimson;
 }
-.descriptionMain div h4{
-    font-size: 20px;
+.descriptionMain div h4 {
+  font-size: 20px;
 }
- 
-.desc{
-    color: white;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    font-size: 18px;
-    padding: 10px;
-   
-   
+
+.desc {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-size: 18px;
+  padding: 10px;
 }
-.desc ul{
-    padding: 10px 20px;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-   
+.desc ul {
+  padding: 10px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }

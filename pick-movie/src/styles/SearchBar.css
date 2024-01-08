@@ -1,12 +1,8 @@
-.searchBar
-{
-    position: absolute;
-    top:  80px;
-    
+.searchBar {
+  position: absolute;
+  top: 80px;
 }
-.searchBar input
-{
-    padding: 20px;
-    width: 150%;
-
+.searchBar input {
+  padding: 20px;
+  width: 150%;
 }

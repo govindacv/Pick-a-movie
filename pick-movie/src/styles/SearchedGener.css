@@ -1,25 +1,24 @@
 .searchedGener {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    align-items: center;
-    padding: 60px 10px;
-    color: white;
-    row-gap: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  padding: 60px 10px;
+  color: white;
+  row-gap: 30px;
 }
 
 .items {
-    color: white;
-    padding: 20px 60px;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 25px;
-    justify-content: center;
+  color: white;
+  padding: 20px 60px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  justify-content: center;
 }
 
 .singlemovie {
-    
-    transition: box-shadow 0.3s ease;
+  transition: box-shadow 0.3s ease;
 }
 
 .singlemovie:hover {
@@ -27,18 +26,15 @@
 }
 
 .movieCon {
-    padding: 10px;
-    width: 200px;
+  padding: 10px;
+  width: 200px;
 }
 
 .singlemoviename {
-    font-size: 20px;
+  font-size: 20px;
 }
 
 .movieposter {
-    display: flex;
-    justify-content: center;
-     
-    
+  display: flex;
+  justify-content: center;
 }
- 
